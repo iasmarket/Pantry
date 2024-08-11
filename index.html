@@ -48,11 +48,12 @@
             overflow: hidden;
         }
 
-        .product img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.product img {
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+}
+
 
         .product .description {
             margin-top: 10px;
@@ -63,7 +64,23 @@
             cursor: pointer;
             color: blue;
         }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
 
+        .pagination a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: gray;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a:hover {
+            background-color: #575757;
+        }
         @media (min-width: 768px) and (max-width: 991px) {
             .product {
                 width: calc(100% / 3);
@@ -104,12 +121,15 @@
     </div>
 
     <div class="container">
-        <!-- Contenu des produits -->
+      
     </div>
 
     <!-- Bouton flottant -->
-    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">Go Back</button>
-
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">HOME</button>
+<div class="pagination">
+        
+        <!-- Ajoutez plus de liens si nécessaire -->
+    </div>
     <script>
         function updateTime() {
             const optionsDate = {
